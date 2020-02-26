@@ -40,7 +40,7 @@ public class Op2 extends Applet {
        int buurman3 = userinput + 1;
        int buurman4 = userinput + 2;
        System.out.println("De 5 getallen zijn " + buurman1 + "-" + buurman2 + "-" + buurman3 + "-" + buurman4 + "");
-       
+
        }
     }
 

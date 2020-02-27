@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Op3 {
@@ -117,8 +118,19 @@ public class Op3 {
         System.out.println("Als u minstens 20 jaar bent betekent dit dat " + conclusie + " hebt.");
 
 
+        System.out.print("Getal 1: ");
+        int getal1 = scanner.nextInt();
+        System.out.print("Getal 2: ");
+        int getal2 = scanner.nextInt();
+        System.out.print("Getal 3: ");
+        int getal3 = scanner.nextInt();
 
-        
+        int[] getallen = {getal1,getal2,getal3};
+        Arrays.sort(getallen);
+        System.out.println("Van klein naar groot: " + getallen[0] + " - " + getallen[1] + " - " + getallen[2] + "");
+
+
+
     }
 }
 

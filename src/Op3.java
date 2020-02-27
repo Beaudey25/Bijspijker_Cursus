@@ -90,16 +90,35 @@ public class Op3 {
         }
 
 
-        System.out.println("Wat is uw gewicht (kg) ?");
+        System.out.print("Wat is uw gewicht (kg) ?");
         int gewicht = scanner.nextInt();
-        System.out.println("Wat is uw lengte (m) ?");
+        System.out.print("Wat is uw lengte (m) ?");
         double lengte = scanner.nextDouble();
         double lengteresultaat = lengte*lengte;
         double resultaatBMI = gewicht / lengteresultaat;
+        int tussenstap = (int) (resultaatBMI * 100);
+        resultaatBMI = tussenstap / 100.0;
 
-
+        String conclusie = "onbekend";
+        if (resultaatBMI < 18.5 ) {
+            conclusie = "u ondergewicht";
+        }
+        else if (resultaatBMI < 25) {
+            conclusie = "u een normaal gewicht";
+        }
+        else if (resultaatBMI < 30) {
+            conclusie = "u een overgewicht";
+        }
+        else {
+            conclusie = "u een 12" +
+                    "zwaar overgewicht";
+        }
         System.out.println("Uw BMI is " +  resultaatBMI + "");
+        System.out.println("Als u minstens 20 jaar bent betekent dit dat " + conclusie + " hebt.");
 
+
+
+        
     }
 }
 

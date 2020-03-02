@@ -56,6 +56,11 @@ public class Op4 {
         }
 
 
+        int randomgetal = (int) (Math.random()* 26 + 97);
+        char ascii = (char) randomgetal;
+        System.out.println("Uw willekeurige letter is de letter " + ascii + ".");
+
+
     }
 }
 

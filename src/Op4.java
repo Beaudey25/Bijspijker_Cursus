@@ -61,6 +61,11 @@ public class Op4 {
         System.out.println("Uw willekeurige letter is de letter " + ascii + ".");
 
 
+        for (int i = 0; i <5 ; i++) {
+
+        }
+
+
     }
 }
 

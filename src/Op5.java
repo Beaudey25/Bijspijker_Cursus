@@ -22,7 +22,7 @@ public class Op5 {
         }
 
         int score = 0;
-        for (int i = 0; i <10 ; i++) {
+        for (int i = 0; i < 10; i++) {
 
             int getal1 = (int) (Math.random() * 10 + 1);
             int getal2 = (int) (Math.random() * 10 + 1);
